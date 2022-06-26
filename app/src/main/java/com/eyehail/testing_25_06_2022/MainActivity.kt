@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
                         buttonFetchMovies.visibility = View.GONE
                         recyclerView.visibility = View.VISIBLE
                         collector.movies.let {
-                            adapter.newMovies(it)
+                            adapter.newMovies(it.results)
                         }
                     }
                     is MainState.Error -> {
